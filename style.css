@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 400px;
+  margin-top: 100px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  gap: 20px;
+}
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+.space {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 5px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  cursor: pointer;
+}
+
+#zero,
+#one,
+#two {
+  border-top: none;
+}
+
+#zero,
+#three,
+#six {
+  border-left: none;
+}
+
+#six,
+#seven,
+#eight {
+  border-bottom: none;
+}
+
+#two,
+#five,
+#eight {
+  border-right: none;
+}
